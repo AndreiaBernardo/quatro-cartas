@@ -15,7 +15,7 @@ body{
     grid-template-columns: 480px 480px 480px;
     grid-template-rows: 182px 182px 182px 182px 182px ;
    margin-top: 40px;
-   margin-left: 150px;
+  
    width: 1440px;
    
 }
