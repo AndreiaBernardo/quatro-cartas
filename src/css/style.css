@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+body{
+    width: 1440px;
+    background-color:hsl(210, 11%, 96%);
+}
+.container{
+    display: grid;
+    grid-template-areas: "titulo " "subtitulo" "bloco1" "bloco2" "bloco3" "bloco4" "footer";
+    grid-template-columns: 480px 480px 480px;
+    grid-template-rows: 182px 182px 182px 182px 182px ;
+   margin-top: 40px;
+   margin-left: 150px;
+   width: 1440px;
+   
+}
+
+
+.container .titulo {
+    grid-area: titulo;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 31px; 
+    width: 550px;
+    text-align:center;
+    font-size: 40px;
+    
+}
+
+
+.container .titulo h1{
+    font-size: 41px;
+
+}
+
+.container .subtitulo {
+    grid-area: subtitulo;
+    grid-column: 2;
+    grid-row: 1;
+    width: 600px;
+    text-align: center;
+    margin-left: -50px;
+    font-size: 17px;
+    margin-top: 130px;
+ 
+}
+
+
+.container .bloco1{
+    grid-area: bloco1;
+    grid-column: 1;
+    grid-row: 2;
+    width: 360px;
+    height: 250px;
+    margin-left: 150px;
+   
+    border-radius: 5px;
+    margin-top: 200px;
+    background-color: hsl(0, 0%, 100%);
+    border-top: solid hsl(180, 62%, 55%) ;
+    box-shadow:0px 7px  16px hsl(208, 8%, 67%);
+
+}
+
+
+.container .bloco1 h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.container .bloco1 p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container .bloco1 img{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+
+.container .bloco2{
+    grid-area: bloco2;
+    grid-column: 2;
+    grid-row: 2;
+    width: 360px;
+    height: 250px;
+    margin-left: 80px;
+    border-radius: 5px;
+    margin-top: 60px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:0px 7px  16px hsl(208, 8%, 67%);
+    border-top: solid hsl(0, 78%, 62%);
+}
+
+
+.container .bloco2 h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.container .bloco2 p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container .bloco2 img{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+
+
+
+.container .bloco3{
+    grid-area: bloco3;
+    grid-column: 2;
+    grid-row: 4;
+    width: 360px;
+    height: 250px;
+    margin-left: 80px;
+    border-radius: 5px;
+    margin-top: 0px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:0px 7px  16px hsl(208, 8%, 67%);
+    border-top: solid hsl(34, 97%, 64%);
+}
+
+
+.container .bloco3 h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.container .bloco3 p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container .bloco3 img{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+
+
+.container .bloco4{
+    grid-area: bloco4;
+    grid-column: 3;
+    grid-row: 2;
+    width: 360px;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 200px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:0px 7px  16px hsl(208, 8%, 67%);
+    border-top: solid hsl(212, 86%, 64%);
+}
+
+.container .bloco4 h2{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+   
+.container .bloco4 p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container .bloco4 img{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+
+footer{
+    grid-area: footer;
+    grid-column: 3 ;
+    grid-row: 5;
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+    margin-right: 60px;
+}
+footer a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .container{
+       
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+
+    }
+
+    .bloco1{
+       margin-bottom: 150px;
+       margin-right: 140px;
+      
+    }
+
+    .bloco2{
+        margin-right: 70px;
+        margin-bottom: 200px;
+
+    }
+
+    .bloco3{
+        margin-right: 70px;
+    }
+
+  
+    
+
+
+}
